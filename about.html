@@ -109,6 +109,84 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
+     /* Container div styling */
+     .image-container {
+            width: 80%;
+            max-width: 1200px; /* Maximum width for large screens like laptops */
+            margin: 50px auto;
+            padding: 30px;
+            border: 3px solid #4CAF50; /* Beautiful border */
+            border-radius: 15px; /* Rounded corners */
+            background-color: #f9f9f9; /* Light background for the container */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow around the container */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Spacing between the images */
+        }
+
+        /* Image styling */
+        .image-container img {
+            width: 80%; /* Larger image width */
+            max-width: 1000px; /* Limit the max width of images */
+            border: 5px solid #4CAF50; /* Beautiful border around images */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Shadows around images */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect for images */
+        .image-container img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* Increased shadow on hover */
+        }
+
+        /* Responsive adjustments for mobile and tablet screens */
+        @media screen and (max-width: 768px) {
+            .image-container {
+                width: 90%; /* Full width for smaller screens */
+                padding: 20px;
+            }
+
+            .image-container img {
+                width: 100%; /* Full width for images */
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .image-container {
+                width: 90%; /* Adjust for tablets and smaller laptops */
+            }
+
+            .image-container img {
+                width: 95%; /* Slightly reduce the image size for medium screens */
+            }
+        }
+        /* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
   </style>
 </head>
 <body>
@@ -139,31 +217,40 @@
   <!-- About Us Section -->
   <section class="about-section" id="about-us">
     <h2>Wild Horse All Assam Karate Championship 2025</h2>
-    <p>We are thrilled to announce the <strong class="highlight">Wild Horse All Assam Karate Championship</strong>, a premier martial arts event that will take place on <strong class="highlight">March 21, 22, and 23, 2025</strong>, at <strong class="highlight">Dibrugarh University</strong> in the vibrant city of Dibrugarh. This championship will bring together karate athletes from across Assam, who will compete in a variety of exciting events and categories.</p>
+    <p><strong>We are excited to announce the <span class="highlight">Wild Horse All Assam Karate Championship</span>,</strong> an exceptional and prestigious martial arts event that will take place on <strong><span class="highlight">March 21, 22, and 23, 2025</span></strong>, at the esteemed <strong><span class="highlight">Dibrugarh University</span></strong>, located in the vibrant and culturally rich city of Dibrugarh. This championship will serve as a platform for elite karate athletes from across Assam, who will compete in a variety of high-level events, showcasing their skills, discipline, and competitive spirit. We are proud to bring this grand event to life and celebrate the art of karate in an environment that is both energizing and inspiring.</p>
+
+<p><strong>Set against the backdrop of Assam’s stunning natural beauty,</strong> the <span class="highlight">Wild Horse All Assam Karate Championship</span> draws direct inspiration from the majestic wild horses of Dibru-Saikhowa National Park, whose spirit of resilience and freedom resonates throughout the competition. Much like these incredible animals that roam the park, our athletes are bound to demonstrate unmatched strength, focus, and perseverance. The event will feature a range of dynamic categories, ensuring that each participant has the opportunity to shine in their respective discipline. The Wild Horse Championship is not just about karate; it’s about celebrating the essence of endurance, determination, and the indomitable human spirit.</p>
+
+<p><strong>As we prepare to host this spectacular event,</strong> we aim to create an atmosphere that celebrates the rich cultural heritage of Assam while showcasing the artistry and athleticism of karate. With the breathtaking beauty of Dibrugarh surrounding us, this championship will undoubtedly become a landmark event in the state’s martial arts scene. Visitors will have the chance to witness thrilling competitions while immersing themselves in the culture, tradition, and natural splendor of Assam. Whether you're an athlete, a supporter, or a visitor, this event promises to offer a memorable experience for all who are part of it.</p>
+
+<p><strong>Join us for this remarkable event,</strong> as we come together to honor the traditions of karate and the strength of human willpower, set against one of India’s most scenic and ecologically rich locations. The <span class="highlight">Wild Horse All Assam Karate Championship</span> is not just a competition—it is a celebration of martial arts, culture, and the unyielding power of nature. We invite you to witness the incredible performances, cheer for the athletes, and experience the perfect blend of sport and nature in a truly extraordinary setting. Get ready for an unforgettable experience—be part of this historic event!</p>
+
     
     <p class="date">Event Dates: March 21-23, 2025</p>
     
-    <div class="events">
-      <p><strong>The championship will feature the following events:</strong></p>
-      <ul>
-        <li><strong>Kata</strong> – Individual performance of traditional karate patterns</li>
-        <li><strong>Kumite</strong> – Sparring competition</li>
-        <li><strong>Team Kata</strong> – Group performance of karate patterns</li>
-        <li><strong>Team Kumite</strong> – Team sparring competition</li>
-      </ul>
-      <p><strong>Categories include:</strong></p>
-      <ul>
-        <li><strong>Sub Junior</strong> – Age group below 10 years</li>
-        <li><strong>Cadet</strong> – Age group 11-14 years</li>
-        <li><strong>Junior</strong> – Age group 15-17 years</li>
-        <li><strong>Under 21</strong> – Age group 18-21 years</li>
-        <li><strong>Senior</strong> – Age group above 21 years</li>
-      </ul>
-    </div>
+    <div class="image-container">
+      <img src="a1.jpg" alt="Image 2">
+      <img src="a2.jpg" alt="Image 3">
+      <img src="a3.jpg" alt="Image 1">
+  </div>
 
     <p class="location">The <strong class="highlight">Wild Horse All Assam Karate Championship 2025</strong> will be held at the prestigious <strong>Dibrugarh University</strong>, located in the beautiful city of <strong>Dibrugarh</strong>, Assam.</p>
   </section>
-
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logos">
+        <img src="f1.jpg" alt="Logo 1" class="footer-logo">
+        <img src="f2.jpg" alt="Logo 2" class="footer-logo">
+        <img src="f3.jpg" alt="Logo 3" class="footer-logo">
+        <img src="f4.jpg" alt="Logo 4" class="footer-logo">
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2025 Dibrugarh District Karate Association. All Rights Reserved.</p>
+        <p>Designed by <strong>Harsh Raut</strong> and Team</p>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -210,5 +297,6 @@
       }, 250);
     });
   });
+  
   </script>
 </html>

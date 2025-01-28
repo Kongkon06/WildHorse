@@ -32,71 +32,72 @@
     .contact-us-section h2 {
       font-size: 36px;
       text-align: center;
-      color: #2c3e50;
+      color: black;
       font-weight: 700;
       margin-bottom: 30px;
     }
+/* Contact Info Styles */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    /* Contact Info Styles */
-    .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+.contact-info {
+  margin-bottom: 20px;
+}
 
-    .contact-info, .map-container {
-      width: 48%;
-      margin-bottom: 30px;
-    }
+.contact-info p {
+  font-size: 18px;
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
 
-    /* Contact Info Section */
-    .contact-info h3 {
-      font-size: 28px;
-      color: #2c3e50;
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
 
-    .contact-info p {
-      font-size: 18px;
-      color: #34495e;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
 
-    .contact-info i {
-      color: #16a085;
-      margin-right: 10px;
-    }
+ /* Reset body and parent container styles */
+body, .parent-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-    /* Social Media Links */
-    .social-media a {
-      color: #16a085;
-      text-decoration: none;
-      margin-right: 20px;
-      font-size: 20px;
-      font-weight: 600;
-    }
+/* Map Section */
+.map-container {
+  width: 100%; /* Full width */
+  max-width: 1400px; /* Maximum width for larger screens */
+  margin: 40px auto; /* Center the container with margin */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Elegant shadow */
+  border-radius: 12px; /* Rounded corners */
+  border: 3px solid #4CAF50; /* Green border for style */
+  overflow: hidden; /* Ensure content fits within rounded corners */
+  box-sizing: border-box; /* Include border and padding in width */
+}
 
-    .social-media a:hover {
-      text-decoration: underline;
-    }
+.map-container iframe {
+  width: 100%; /* Full width of the container */
+  height: 600px; /* Height for better visibility */
+  border: none; /* Remove default iframe border */
+  border-radius: 12px; /* Match the container's border-radius */
+}
 
-    /* Map Section */
-    .map-container {
-      width: 100%;
-      margin-top: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .map-container {
+    max-width: 90%; /* Use 90% of the screen width for smaller screens */
+  }
+}
 
-    .map-container iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 8px;
-    }
+@media (max-width: 768px) {
+  .map-container iframe {
+    height: 400px; /* Reduce height for smaller devices */
+  }
+}
+
 
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -109,6 +110,96 @@
         width: 100%;
       }
     }
+    .contact-email {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-email p {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.email-link {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid #16a085;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-link:hover {
+  background-color: #16a085;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(22, 160, 133, 0.4);
+}
+.contact-email p:nth-child(2) {
+  font-size: 28px; /* Make "Email Us" text big */
+  font-weight: bold;
+  color: #000; /* Black color */
+  margin: 10px 0;
+}
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-email p {
+    font-size: 16px; /* Smaller font size for smaller screens */
+  }
+
+  .email-link {
+    font-size: 20px; /* Adjust link font size */
+    padding: 4px 8px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-email p:nth-child(2) {
+    font-size: 24px; /* Adjust "Email Us" font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-email p {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .email-link {
+    font-size: 18px; /* Smaller font size for mobile */
+    padding: 3px 6px; /* Adjust padding */
+  }
+
+  .contact-email p:nth-child(2) {
+    font-size: 20px; /* Further adjust "Email Us" font size */
+  }
+}
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
   </style>
 </head>
 <body>
@@ -142,24 +233,32 @@
 
     <div class="contact-container">
       <!-- Contact Info Section -->
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p><i class="fas fa-phone"></i><strong>Phone:</strong> +91 123 456 7890</p>
-        <p><i class="fas fa-envelope"></i><strong>Email:</strong> info@karatechampionship.com</p>
-        <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> Dibrugarh University, Dibrugarh, Assam</p>
-
-        <!-- Social Media Links -->
-        <div class="social-media">
-          <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://instagram.com" target="_blank">Instagram</a>
-          <a href="https://twitter.com" target="_blank">Twitter</a>
-        </div>
+      <div class="contact-container">
+        <div class="contact-item">
+          <i class="fa fa-map-marker"></i>
+          <div class="contact-container">
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+              <p><i class="fa fa-phone"></i> Dr. Dipjyoti Gogoi (D.U.Sports Officer): 8136039581</p>
+              <p><i class="fa fa-phone"></i> Niren Phukan: 9954594498</p>
+              <p><i class="fa fa-phone"></i> Anjan Chetia: 8402972950</p>
+              <p><i class="fa fa-phone"></i> Shasanka Sukla: 8133840620</p>
+              <div class="contact-email">
+                <p>or</p>
+                <p>Email Us</p>
+                <p>at</p>
+                <a href="mailto:wildhorsechampionship2025@gmail.com" class="email-link">wildhorsechampionship2025@gmail.com</a>
+              </div>
+              
+            <!-- Social Media Links -->
+           
+          
+          
       </div>
     </div>
 
     <!-- Map Location Section -->
     <div class="map-container">
-      <h3>Find Us on the Map</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1080.6426281718732!2d94.89895508500715!3d27.44869322412198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3740a2b3d646afdf%3A0x71d669f44651d34c!2sBishnu%20Rabha%20Rangamancha!5e0!3m2!1sen!2sin!4v1737961201193!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
@@ -212,5 +311,20 @@
       });
     });
     </script>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logos">
+          <img src="f1.jpg" alt="Logo 1" class="footer-logo">
+          <img src="f2.jpg" alt="Logo 2" class="footer-logo">
+          <img src="f3.jpg" alt="Logo 3" class="footer-logo">
+          <img src="f4.jpg" alt="Logo 3" class="footer-logo">
+        </div>
+        <div class="footer-info">
+          <p>&copy; Dibrugarh District Karate Association. All Rights Reserved.</p>
+          <p>Designed by Harsh Raut and Team</p>
+        </div>
+      </div>
+    </footer>
+    
 </body>
 </html>
